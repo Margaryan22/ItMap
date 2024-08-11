@@ -1,13 +1,4 @@
-<script>
-export default {
-  name: "Welcome",
-  methods: {
-    goToRegister() {
-      this.$router.push("/register");
-    },
-  },
-};
-</script>
+<script></script>
 <template>
   <div class="flex flex-col min-h-screen justify-center items-center">
     <b class="font-sans text-6xl mb-12 text-slate-600">Welcome to WhyIt</b>
@@ -30,13 +21,13 @@ export default {
       >
         LogIn
       </button>
-
-      <button
-        @click="goToRegister"
-        class="font-bold bg-slate-500 p-3 rounded-xl text-white text-xl hover:bg-slate-600 active:bg-slate-700 transition"
-      >
-        Register
-      </button>
+      <router-link to="/register">
+        <button
+          class="font-bold bg-slate-500 p-3 rounded-xl text-white text-xl hover:bg-slate-600 active:bg-slate-700 transition"
+        >
+          Register
+        </button>
+      </router-link>
     </div>
   </div>
 </template>
