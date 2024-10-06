@@ -1,25 +1,13 @@
-import { createApp } from "vue";
-import "./style.css";
-import Register from "./pages/Register.vue";
-import Welcome from "./pages/Welcome.vue";
-import BlockList from "./components/BlockList.vue";
-import App from "./App.vue";
-import { createRouter, createWebHistory } from "vue-router";
+import './style.css';
+import { createApp } from 'vue';
+import { autoAnimatePlugin } from '@formkit/auto-animate/vue';
+import { createPinia } from 'pinia';
+import router from './router';
+import App from './App.vue';
 
 const app = createApp(App);
-const routes = [
-  {
-    path: "/register",
-    name: "Register",
-    component: Register,
-  },
-  {
-    path: "/",
-    name: "Welcome",
-    component: Welcome,
-  },
-];
 
-const router = createRouter({ history: createWebHistory(), routes });
+app.use(createPinia());
 app.use(router);
-app.mount("#app");
+app.use(autoAnimatePlugin);
+app.mount('#app');

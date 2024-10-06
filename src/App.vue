@@ -1,8 +1,9 @@
 <script setup>
-import Welcome from "./pages/Welcome.vue";
-import Register from "./pages/Register.vue";
+import { RouterView } from 'vue-router';
+import Footer from './components/Footer.vue';
 </script>
 
 <template>
-  <router-view></router-view>
+  <RouterView />
+  <Footer />
 </template>

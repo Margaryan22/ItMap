@@ -1,6 +1,13 @@
-<script></script>
+<script setup>
+defineProps({
+  nickname: String,
+});
+</script>
 <template>
-  <div class="flex flex-col min-h-screen justify-center items-center">
+  <div
+    class="select-none flex flex-col min-h-screen justify-center items-center"
+    v-auto-animate
+  >
     <b class="font-sans text-5xl mb-8 text-slate-600">Register in WhyIt</b>
     <b class="font-sans text-3xl mb-4 text-slate-500"
       >Please, fill in the fields</b
@@ -19,11 +26,13 @@
         placeholder="email address"
       />
 
-      <button
-        class="font-bold bg-slate-500 p-3 rounded-xl text-white text-xl hover:bg-slate-600 active:bg-slate-700 transition border-none"
-      >
-        Register
-      </button>
+      <router-link to="/">
+        <button
+          class="w-52 font-bold bg-slate-500 p-3 rounded-xl text-white text-xl hover:bg-slate-600 active:bg-slate-700 transition border-none"
+        >
+          Register
+        </button>
+      </router-link>
     </div>
     <router-link to="/">
       <button class="mt-4 font-bold text-slate-400">Back to Welcome</button>

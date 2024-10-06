@@ -1,13 +1,10 @@
 <template>
-  <div class="flex flex-col items-center">
-    <h2 class="font-sans text-4xl font-bold text-slate-600 mt-10">
-      Hello,Sargis
+  <div class="flex flex-col items-center mx-auto select-none mt-5">
+    <h2 class="font-sans text-2xl font-bold text-slate-600">
+      (Welcome to WhyIT)
     </h2>
-    <h2 class="font-sans text-3xl font-medium text-slate-500 mt-10">
+    <h2 class="font-sans text-xl font-medium text-slate-500 mt-2 mb-5">
       Choose your path of learning IT
     </h2>
-    <p class="font-sans text-xl font-medium text-slate-400 mt-2">
-      )You can choose one or few paths(
-    </p>
   </div>
 </template>
